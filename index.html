@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Web</title>
+    <link rel="stylesheet" href="estilos.css"/>
+    <link rel="icon" type="image/png" href="Imagenes/favicon.png"/>
+</head>
+<body>
+    <main>
+    <h1>Registrese en mi página</h1>
+    <p>Por favor complete los siguientes datos:</p>
+    </main>
+    <fieldset class="estilo">
+        <legend>Datos de Registro</legend>
+        <div class="enunciado">
+        <label for="name">Nombre</label><br>
+        <input id="name" type="text" required>
+        </div>
+        <div class="enunciado">
+        <label for="apellido">Apellido</label><br>
+        <input id="apellido" type="text" required>
+        </div>
+        <div class="enunciado">
+        <label for="email">Correo Electrónico</label><br>
+        <input id="email" type="email" required>
+        </div>
+        <div class="enunciado">
+        <label for="genero">Genero</label><br>
+        <select id="genero" required>
+        <option value="hombre">Hombre</option>
+        <option value="mujer">Mujer</option>
+        <option value="no-binario">No Binario</option>
+        </select>
+        </div>
+        <div class="enunciado">
+        <label for="edad">Edad</label><br>
+        <input id="edad" type="number" min="18" max="65" required>
+        </div>
+        <div class="enunciado">
+        <label for="pais">Pais</label><br>
+        <select id="pais" required>
+        <option value="seleccionar">Seleccionar</option>
+        <option value="argentina">Argentina</option>
+        <option value="bolivia">Bolivia</option>
+        <option value="brasil">Brasil</option>
+        <option value="chile">Chile</option>
+        <option value="paraguay">Paraguay</option>
+        <option value="uruguay">Uruguay</option>
+        </select>
+        </div>
+    </fieldset>
+    <fieldset class="estilo">
+        <legend>Tipo de Cuenta</legend>
+        <div class="enunciado">
+        <label for="cuenta-personal">
+        <input id="cuenta-personal" type="radio" name="tipo-de-cuenta" checked>Cuenta Personal</label>
+        </div>
+        <div class="enunciado">
+        <label for="cuenta-de-empresa">
+        <input id="cuenta-de-empresa" type="radio" name="tipo-de-cuenta" checked>Cuenta de Empresa</label>
+        </div>
+    </fieldset>
+    <fieldset class="estilo">
+        <legend>Información Adicional</legend>
+        <div class="enunciado">
+        <label for="foto-perfil">Seleccione una foto para su perfil<br>
+        <input id="foto-perfil" type="file" name="file"/>
+        </label>
+        </div>
+        <hr>
+        <div class="enunciado">
+        <label for="referencia">¿Como te enteraste de esta página?<br>
+        <select id="referencia" name="referencia">
+        <option value="instagram">Instagram</option>
+        <option value="facebook">Facebook</option>
+        <option value="twitter">Twitter</option>
+        <option value="whatsapp">Whatsapp</option>
+        <option value="youtube">YouTube</option>
+        <option value="anuncios">Anuncios</option>
+        </select>
+        </label>
+        </div>
+        <hr>
+        <div class="enunciado">
+        <label for="descripcion">Descripción de su persona:<br><textarea id="descripcion" name="descripcion" rows="3" cols="30" placeholder="Inserte su descripción aqui..."></textarea></label>
+        </div>
+    </fieldset>
+    <label for="terminos-y-condiciones">
+    <input id="terminos-y-condiciones" type="checkbox" required name="terminos-y-condiciones" /> Aceptar los <a href="https://www.roberthalf.cl/terminos-y-condiciones-de-uso-de-sitio-web">Términos y Condiciones</a>
+    </label>
+    <input type="submit" value="Confirmar y Enviar"/>
+</body>
+</html>
