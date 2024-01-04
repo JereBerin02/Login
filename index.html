@@ -12,7 +12,8 @@
     <h1>Registrese en mi página</h1>
     <p>Por favor complete los siguientes datos:</p>
     </main>
-    <fieldset class="estilo">
+    <section id="contacto">
+        <form action="post">
         <legend>Datos de Registro</legend>
         <div class="enunciado">
         <label for="name">Nombre</label><br>
@@ -27,7 +28,7 @@
         <input id="email" type="email" required>
         </div>
         <div class="enunciado">
-        <label for="genero">Genero</label><br>
+        <label for="genero">Género</label><br>
         <select id="genero" required>
         <option value="hombre">Hombre</option>
         <option value="mujer">Mujer</option>
@@ -50,8 +51,6 @@
         <option value="uruguay">Uruguay</option>
         </select>
         </div>
-    </fieldset>
-    <fieldset class="estilo">
         <legend>Tipo de Cuenta</legend>
         <div class="enunciado">
         <label for="cuenta-personal">
@@ -61,15 +60,12 @@
         <label for="cuenta-de-empresa">
         <input id="cuenta-de-empresa" type="radio" name="tipo-de-cuenta" checked>Cuenta de Empresa</label>
         </div>
-    </fieldset>
-    <fieldset class="estilo">
         <legend>Información Adicional</legend>
         <div class="enunciado">
         <label for="foto-perfil">Seleccione una foto para su perfil<br>
         <input id="foto-perfil" type="file" name="file"/>
         </label>
         </div>
-        <hr>
         <div class="enunciado">
         <label for="referencia">¿Como te enteraste de esta página?<br>
         <select id="referencia" name="referencia">
@@ -82,14 +78,15 @@
         </select>
         </label>
         </div>
-        <hr>
         <div class="enunciado">
         <label for="descripcion">Descripción de su persona:<br><textarea id="descripcion" name="descripcion" rows="3" cols="30" placeholder="Inserte su descripción aqui..."></textarea></label>
         </div>
-    </fieldset>
+        <hr>
     <label for="terminos-y-condiciones">
     <input id="terminos-y-condiciones" type="checkbox" required name="terminos-y-condiciones" /> Aceptar los <a href="https://www.roberthalf.cl/terminos-y-condiciones-de-uso-de-sitio-web">Términos y Condiciones</a>
     </label>
     <input type="submit" value="Confirmar y Enviar"/>
+    </form>
+    </section>
 </body>
 </html>
