@@ -16,31 +16,36 @@
         <form action="post">
         <legend>Datos de Registro</legend>
         <div class="enunciado">
-        <label for="name">Nombre</label><br>
+        <label class="label" for="name">Nombre</label>
         <input id="name" type="text" required>
         </div>
+        <br>
         <div class="enunciado">
-        <label for="apellido">Apellido</label><br>
+        <label class="label" for="apellido">Apellido</label>
         <input id="apellido" type="text" required>
         </div>
+        <br>
         <div class="enunciado">
-        <label for="email">Correo Electrónico</label><br>
+        <label class="label" for="email">Correo Electrónico</label>
         <input id="email" type="email" required>
         </div>
+        <br>
         <div class="enunciado">
-        <label for="genero">Género</label><br>
+        <label class="label" for="genero">Género</label>
         <select id="genero" required>
         <option value="hombre">Hombre</option>
         <option value="mujer">Mujer</option>
         <option value="no-binario">No Binario</option>
         </select>
         </div>
+        <br>
         <div class="enunciado">
-        <label for="edad">Edad</label><br>
+        <label class="label" for="edad">Edad</label>
         <input id="edad" type="number" min="18" max="65" required>
         </div>
+        <br>
         <div class="enunciado">
-        <label for="pais">Pais</label><br>
+        <label class="label" for="pais">Pais</label>
         <select id="pais" required>
         <option value="seleccionar">Seleccionar</option>
         <option value="argentina">Argentina</option>
@@ -53,21 +58,21 @@
         </div>
         <legend>Tipo de Cuenta</legend>
         <div class="enunciado">
-        <label for="cuenta-personal">
+        <label class="label" for="cuenta-personal">
         <input id="cuenta-personal" type="radio" name="tipo-de-cuenta" checked>Cuenta Personal</label>
         </div>
         <div class="enunciado">
-        <label for="cuenta-de-empresa">
+        <label class="label" for="cuenta-de-empresa">
         <input id="cuenta-de-empresa" type="radio" name="tipo-de-cuenta" checked>Cuenta de Empresa</label>
         </div>
         <legend>Información Adicional</legend>
         <div class="enunciado">
-        <label for="foto-perfil">Seleccione una foto para su perfil<br>
+        <label class="label" for="foto-perfil" id="foto">Seleccione una foto para su perfil<br>
         <input id="foto-perfil" type="file" name="file"/>
         </label>
         </div>
         <div class="enunciado">
-        <label for="referencia">¿Como te enteraste de esta página?<br>
+        <label class="label" for="referencia">¿Como te enteraste de esta página?<br>
         <select id="referencia" name="referencia">
         <option value="instagram">Instagram</option>
         <option value="facebook">Facebook</option>
@@ -79,10 +84,10 @@
         </label>
         </div>
         <div class="enunciado">
-        <label for="descripcion">Descripción de su persona:<br><textarea id="descripcion" name="descripcion" rows="3" cols="30" placeholder="Inserte su descripción aqui..."></textarea></label>
+        <label class="label" for="descripcion">Descripción de su persona:<br><textarea id="descripcion" name="descripcion" rows="3" cols="30" placeholder="Inserte su descripción aqui..."></textarea></label>
         </div>
         <hr>
-    <label for="terminos-y-condiciones">
+    <label class="label" for="terminos-y-condiciones">
     <input id="terminos-y-condiciones" type="checkbox" required name="terminos-y-condiciones" /> Aceptar los <a href="https://www.roberthalf.cl/terminos-y-condiciones-de-uso-de-sitio-web">Términos y Condiciones</a>
     </label>
     <input type="submit" value="Confirmar y Enviar"/>
